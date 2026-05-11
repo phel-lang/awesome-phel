@@ -9,7 +9,7 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 - [Core](#core)
 - [Editor / IDE Plugins](#editor--ide-plugins)
 - [Project Skeletons](#project-skeletons)
-- [Libraries](#libraries)
+- [Packages & Libraries](#packages--libraries)
   - [CLI](#cli)
   - [Database](#database)
   - [Validation](#validation)
@@ -19,6 +19,7 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
   - [Utilities & Demos](#utilities--demos)
 - [Articles & Blog Posts](#articles--blog-posts)
 - [Community](#community)
+- [Ideas & Wishlist](#ideas--wishlist)
 - [Contributing](#contributing)
 
 ## Core
@@ -37,7 +38,7 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 - [web-skeleton](https://github.com/phel-lang/web-skeleton) - Skeleton for building a website with Phel.
 - [cli-skeleton](https://github.com/phel-lang/cli-skeleton) - Skeleton for building a CLI app with Phel.
 
-## Libraries
+## Packages & Libraries
 
 ### CLI
 
@@ -92,6 +93,33 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 - [API Reference](https://phel-lang.org/documentation/reference/api/)
 - [Practice Exercises](https://phel-lang.org/practice)
 - [Contributing Guide](https://github.com/phel-lang/phel-lang/blob/main/.github/CONTRIBUTING.md)
+
+## Ideas & Wishlist
+
+Missing from the ecosystem - good candidates to build:
+
+**Packages & Libraries**
+- HTTP client wrapper (inspired by Guzzle / clj-http)
+- Routing library (inspired by Reitit / FastRoute)
+- HTML generation from data structures (inspired by Hiccup)
+- SQL DSL / query builder (inspired by HoneySQL / Doctrine DBAL)
+- Logging library (inspired by Timbre / Monolog)
+- Date/time utilities (inspired by Carbon / clj-time)
+- Fake data generator (inspired by Faker / clojure.spec generators)
+- Environment / config management (inspired by cprop / phpdotenv)
+- Filesystem abstraction (inspired by Flysystem)
+- Event dispatcher (inspired by Symfony EventDispatcher)
+- UUID library (inspired by ramsey/uuid)
+- CSV / YAML parser (inspired by league/csv / clojure.data.csv)
+- Code formatter / linter (inspired by cljfmt / PHP-CS-Fixer)
+
+**Projects & Apps**
+- Minimal web framework (inspired by Ring + Compojure / Slim)
+- Blog engine (inspired by Luminus / Sculpin)
+- Static site generator
+- REST API starter kit (inspired by Mezzio / Pedestal)
+- Admin panel generator (inspired by Filament / Nova)
+- CLI task manager (inspired by Task / Robo)
 
 ## Contributing
 
