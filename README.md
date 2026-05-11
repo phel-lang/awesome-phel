@@ -13,9 +13,6 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
   - [CLI](#cli)
   - [Database](#database)
   - [Validation](#validation)
-  - [Routing](#routing)
-  - [REPL / Tooling](#repl--tooling)
-  - [Blogging](#blogging)
 - [Projects & Apps](#projects--apps)
   - [Games](#games)
   - [Web Apps](#web-apps)
@@ -54,18 +51,6 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 ### Validation
 
 - [phel-schema](https://github.com/phel-lang/phel-schema) - Schema validation library inspired by [zod](https://zod.dev/).
-
-### Routing
-
-- [router](https://github.com/phel-lang/router) - Router based on the Symfony Routing component.
-
-### REPL / Tooling
-
-- [phel-nrepl](https://github.com/jasalt/phel-nrepl) - nREPL server implementation for Phel.
-
-### Blogging
-
-- [plogs](https://github.com/phel-lang/plogs) - Tools for blogging and Twitter.
 
 ## Projects & Apps
 
@@ -106,12 +91,10 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 - [Getting Started](https://phel-lang.org/documentation/getting-started/)
 - [API Reference](https://phel-lang.org/documentation/reference/api/)
 - [Practice Exercises](https://phel-lang.org/practice)
-- [In the Wild](https://phel-lang.org/documentation/reference/in-the-wild/) - Upstream list of Phel projects.
-- [Changelog](https://github.com/phel-lang/phel-lang/blob/main/CHANGELOG.md)
 - [Contributing Guide](https://github.com/phel-lang/phel-lang/blob/main/.github/CONTRIBUTING.md)
-- [Code of Conduct](https://github.com/phel-lang/phel-lang/blob/main/.github/CODE_OF_CONDUCT.md)
-- [Twitter / X](https://x.com/phel_lang/)
 
 ## Contributing
 
-PRs welcome. Add new entries in alphabetical order within their section. Each entry: `- [name](url) - short description ending with a period.`
+PRs welcome. Add new entries in alphabetical order within their section. 
+
+> Each entry: `- [name](url) - short description ending with a period.`
