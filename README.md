@@ -48,6 +48,7 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 ### Database
 
 - [phel-pdo](https://github.com/phel-lang/phel-pdo) - PDO wrapper for database interaction.
+- [phel-sql](https://github.com/phel-lang/phel-sql) - Data-driven SQL DSL inspired by HoneySQL. Pure data in, `[sql params]` out.
 
 ### Validation
 
@@ -102,7 +103,6 @@ Missing from the ecosystem - good candidates to build:
 - HTTP client wrapper (inspired by Guzzle / clj-http)
 - Routing library (inspired by Reitit / FastRoute)
 - HTML generation from data structures (inspired by Hiccup)
-- SQL DSL / query builder (inspired by HoneySQL / Doctrine DBAL)
 - Logging library (inspired by Timbre / Monolog)
 - Date/time utilities (inspired by Carbon / clj-time)
 - Fake data generator (inspired by Faker / clojure.spec generators)
