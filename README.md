@@ -12,6 +12,7 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 - [Packages & Libraries](#packages--libraries)
   - [CLI](#cli)
   - [Database](#database)
+  - [Logging](#logging)
   - [Validation](#validation)
 - [Projects & Apps](#projects--apps)
   - [Games](#games)
@@ -49,6 +50,10 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 
 - [phel-pdo](https://github.com/phel-lang/phel-pdo) - PDO wrapper for database interaction.
 - [phel-sql](https://github.com/phel-lang/phel-sql) - Data-driven SQL DSL inspired by HoneySQL. Pure data in, `[sql params]` out.
+
+### Logging
+
+- [phel-log](https://github.com/phel-lang/phel-log) - Data-driven logging library. Levels, namespace filtering, pluggable appenders, PSR-3 adapter, Monolog handler bridge. Inspired by Timbre + Monolog.
 
 ### Validation
 
@@ -103,7 +108,6 @@ Missing from the ecosystem - good candidates to build:
 - HTTP client wrapper (inspired by Guzzle / clj-http)
 - Routing library (inspired by Reitit / FastRoute)
 - HTML generation from data structures (inspired by Hiccup)
-- Logging library (inspired by Timbre / Monolog)
 - Date/time utilities (inspired by Carbon / clj-time)
 - Fake data generator (inspired by Faker / clojure.spec generators)
 - Environment / config management (inspired by cprop / phpdotenv)
