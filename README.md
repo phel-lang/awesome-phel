@@ -64,6 +64,7 @@ A curated list of awesome [Phel](https://phel-lang.org/) libraries, tools, proje
 ### Games
 
 - [phel-doom](https://github.com/Chemaclass/phel-doom) - DOOM-lite raycaster with 256-color ANSI.
+- [phel-flappybird](https://github.com/Chemaclass/phel-flappybird) - Flappy Bird in the CLI terminal.
 - [phel-snake](https://github.com/Chemaclass/phel-snake) - Snake game for the CLI terminal.
 - [phel-tic-tac-toe](https://github.com/smeghead/phel-tic-tac-toe) - Tic-tac-toe in the terminal.
 - [phel-lifegame](https://github.com/smeghead/phel-lifegame) - Conway's Game of Life simulation.
