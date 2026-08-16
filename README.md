@@ -79,8 +79,6 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 
 - [Docker image `phellang/repl`](https://hub.docker.com/r/phellang/repl) - Official image to start a Phel REPL with `docker run -it --rm phellang/repl`.
 - [nixpkgs `phel`](https://github.com/NixOS/nixpkgs/blob/master/pkgs/by-name/ph/phel/package.nix) - Phel packaged for Nix, `nix shell nixpkgs#phel`.
-- [phel-nrepl](https://github.com/leobm/phel-nrepl) - nREPL server for Phel, for use with Calva and other nREPL clients.
-- [phel-nrepl (jasalt)](https://codeberg.org/jasalt/phel-nrepl) - nREPL server written in Phel on amphp/socket, with Emacs / CIDER and Calva setup notes.
 - [setup-phel-action](https://github.com/phel-lang/setup-phel-action) - Set up Phel in GitHub Actions workflows.
 
 ## Project Skeletons
