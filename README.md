@@ -13,6 +13,7 @@ Phel is a functional, Lisp-inspired language that compiles to PHP: persistent da
 - [Project Skeletons](#project-skeletons)
 - [Packages & Libraries](#packages--libraries)
   - [CLI](#cli)
+  - [Data & Serialization](#data--serialization)
   - [Database](#database)
   - [Logging](#logging)
   - [Validation](#validation)
@@ -23,6 +24,9 @@ Phel is a functional, Lisp-inspired language that compiles to PHP: persistent da
   - [Utilities & Demos](#utilities--demos)
 - [Learning](#learning)
   - [Tutorials & Deep Dives](#tutorials--deep-dives)
+  - [Articles](#articles)
+  - [Talks & Videos](#talks--videos)
+  - [Examples & Katas](#examples--katas)
   - [Release Notes](#release-notes)
 - [Community](#community)
 - [Ideas & Wishlist](#ideas--wishlist)
@@ -68,11 +72,16 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 ## Editor / IDE Plugins
 
 - [phel-intellij-plugin](https://github.com/phel-lang/phel-intellij-plugin) - Official IntelliJ / PhpStorm plugin.
+- [phel-mode](https://github.com/jasalt/phel-mode) - Emacs major mode based on clojure-mode, with REPL workflow and in-progress LSP / CIDER support.
 - [phel-vs-code-extension](https://github.com/phel-lang/phel-vs-code-extension) - VS Code extension: highlighting, completion, hover, diagnostics, REPL, paredit, refactoring, Xdebug adapter.
+- [phel.vim](https://github.com/danirod/phel.vim) - Vim syntax highlighting and filetype detection for `.phel` files.
 
 ## Tooling
 
+- [Docker image `phellang/repl`](https://hub.docker.com/r/phellang/repl) - Official image to start a Phel REPL with `docker run -it --rm phellang/repl`.
+- [nixpkgs `phel`](https://github.com/NixOS/nixpkgs/blob/master/pkgs/by-name/ph/phel/package.nix) - Phel packaged for Nix, `nix shell nixpkgs#phel`.
 - [phel-nrepl](https://github.com/leobm/phel-nrepl) - nREPL server for Phel, for use with Calva and other nREPL clients.
+- [phel-nrepl (jasalt)](https://codeberg.org/jasalt/phel-nrepl) - nREPL server written in Phel on amphp/socket, with Emacs / CIDER and Calva setup notes.
 - [setup-phel-action](https://github.com/phel-lang/setup-phel-action) - Set up Phel in GitHub Actions workflows.
 
 ## Project Skeletons
@@ -87,6 +96,10 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 
 - [phel-cli-gui](https://github.com/Chemaclass/phel-cli-gui) - Functions to render UI in the terminal.
 - [phel-getopt](https://github.com/smeghead/phel-getopt) - Command-line argument parsing for Phel CLI programs.
+
+### Data & Serialization
+
+- [phel-bencode](https://gitlab.com/jasalt/phel-bencode) - Bencode encoding and decoding of Phel data structures, on Packagist as `jasalt/phel-bencode`.
 
 ### Database
 
@@ -110,6 +123,7 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 - [phel-doom](https://github.com/Chemaclass/phel-doom) - DOOM-lite raycaster with 256-color ANSI and procedural levels.
 - [phel-flappybird](https://github.com/Chemaclass/phel-flappybird) - Flappy Bird in the CLI terminal.
 - [phel-lifegame](https://github.com/smeghead/phel-lifegame) - Conway's Game of Life simulation.
+- [phel-minesweeper](https://github.com/SauronBot/phel-minesweeper) - Terminal Minesweeper with flagging, four difficulty levels, and a safe first click.
 - [phel-snake](https://github.com/Chemaclass/phel-snake) - Snake game for the CLI terminal.
 - [phel-tic-tac-toe](https://github.com/smeghead/phel-tic-tac-toe) - Tic-tac-toe in the terminal.
 - [phelgeon](https://github.com/Lacsw/phelgeon) - Procedural, turn-based dungeon crawler for the terminal.
@@ -122,14 +136,24 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 
 ### Integrations
 
+- [demo-phel-datastar](https://github.com/jasalt/demo-phel-datastar) - Datastar hypermedia demo driven by server-sent events from Phel, with minimal JavaScript.
+- [phel-google-sheets-example](https://codeberg.org/jasalt/phel-google-sheets-example) - Read and write Google Sheets from Phel via the Google API PHP client.
 - [phel-symfony-demo](https://github.com/Chemaclass/phel-symfony-demo) - Symfony + Phel: Ring-style handlers over plain maps, no ORM, ~90 LOC adapter.
+- [phel-wp-plugin](https://github.com/jasalt/phel-wp-plugin) - WordPress plugin skeleton rendering admin widgets with `phel.html`, with a devenv / Docker development setup.
+- [phelano](https://github.com/leocavalcante/phelano) - Phel running on Hyperf's Nano coroutine HTTP server.
 - [wp-http-eval](https://github.com/jasalt/wp-http-eval) - WordPress plugin evaluating Phel expressions from the admin dashboard or a token-authenticated REST endpoint.
 
 ### Utilities & Demos
 
+- [Geo3x3](https://github.com/taisukef/Geo3x3) - Geocoding system implemented in 100+ languages, including a Phel port.
+- [habit-tracker](https://github.com/JesusValeraDev/habit-tracker) - Command-line habit tracker with JSON persistence and streak tracking.
+- [phel-aa](https://github.com/smeghead/phel-aa) - Convert PNG images into ASCII art from the command line.
 - [phel-crawler](https://github.com/SauronBot/phel-crawler) - Web crawler CLI using Guzzle and Symfony DomCrawler.
+- [phel-grep](https://github.com/smeghead/phel-grep) - Grep-like CLI built on phel-getopt.
+- [phel-junkshed](https://github.com/jasalt/phel-junkshed) - Grab-bag of reusable Phel namespaces: CLI options, HTTP client, PDO, sitemap, WordPress and API helpers.
 - [phel-mml2wav](https://github.com/smeghead/phel-mml2wav) - WAV file generation from MML notation.
 - [phel-saraudon](https://github.com/smeghead/phel-saraudon) - Git log visualization utility.
+- [phel-todo](https://github.com/CosmeValera/phel-todo) - Command-line todo manager exercising records, protocols, multimethods, and transducers.
 - [zo3ja](https://github.com/smeghead/zo3ja) - CLI RSS feed checker.
 
 ## Learning
@@ -149,6 +173,32 @@ Newest first.
 - [Map, Filter, Reduce: Your First Functional Toolkit in Phel](https://phel-lang.org/blog/map-filter-reduce/) - Functional fundamentals with REPL examples.
 - [Functional Programming in PHP: Lessons from My First Experiments](https://phel-lang.org/blog/functional-programming-in-php/) - Early FP exploration that influenced Phel.
 
+### Articles
+
+Third-party and off-site writing about Phel, newest first.
+
+- [Exploring Programming Languages: Phel](https://blog.devgenius.io/exploring-programming-languages-phel-db3511d40be3) - Hands-on first contact with Phel, building a small LED-numbers app (2025).
+- [Phel Lang, a native LISP for PHP](https://24daysindecember.net/2022/12/17/introduction-phel-lang-a-native-lisp-for-php/) - Advent-calendar introduction on 24 Days in December (2022).
+- [Phel: the Lisp that compiles to PHP](https://dev.to/chemaclass/phel-the-lisp-that-compiles-to-php-963) - Early walkthrough of the language and its motivation on DEV (2021).
+- [Phel Language, Lisp for PHP](https://phpmagazine.net/2021/01/phel-language-lisp-for-php.html) - PHP Magazine coverage of the first public releases (2021).
+
+### Talks & Videos
+
+Newest first.
+
+- [Running DOOM in PHP with Phel](https://phpconference.com/php-core-coding/running-doom-php-phel/) - International PHP Conference, Munich (2026). [Slides](https://chemaclass.com/slides/phel-doom/).
+- [Writing Lisp in PHP: A Journey with Phel](https://phpconference.com/php-core-coding/lisp-in-php-phel/) - International PHP Conference, Berlin (2026).
+- [From $this to (this): A Gentle Introduction to Phel](https://phpconference.com/web-development/phel-introduction-functional-programming-lisp/) - International PHP Conference, Munich (2025).
+- [Phel, a native Lisp for PHP](https://www.wearedevelopers.com/en/videos/791/phel-a-native-lisp-for-php) - WeAreDevelopers World Congress, Berlin (2023). Video, ~15 min.
+- [Phel in 5 min](https://youtu.be/ZQTann9ItH8) - Berlin Hack & Tell lightning talk (2023). Video.
+- [Phel Language: ¿Programación funcional para PHP?](https://www.youtube.com/live/9pElbTEcyGA) - DesarrolloWeb live session, in Spanish (2022). Video.
+- [All Phel talks](https://chemaclass.com/talks/phel/) - Running index of conference and meetup talks about Phel.
+
+### Examples & Katas
+
+- [katas-phel](https://github.com/danirod-live/katas-phel) - Programming katas solved in Phel, from a Spanish-language live-coding stream.
+- [phel-amphp-examples](https://github.com/jasalt/phel-amphp-examples) - AMPHP concurrency examples translated to Phel: fibers, socket servers, SSE, parallel functions.
+
 ### Release Notes
 
 - [Phel 0.47: Clear Signals](https://phel-lang.org/blog/phel-0-47-clear-signals/) - LSP signature help, per-session REPL value history over nREPL, examples in `(doc)`, structural test diffs, ~30% faster startup.
@@ -162,6 +212,11 @@ Newest first.
 - [Practice Exercises](https://phel-lang.org/practice)
 - [Blog](https://phel-lang.org/blog/)
 - [Contributing Guide](https://github.com/phel-lang/phel-lang/blob/main/.github/CONTRIBUTING.md)
+- [GitHub Discussions](https://github.com/phel-lang/phel-lang/discussions)
+- [@phel_lang on X](https://x.com/phel_lang)
+- [Hacker News: launch thread (2021)](https://news.ycombinator.com/item?id=26184044) - 81 points, 34 comments. See also the [v0.36 thread (2026)](https://news.ycombinator.com/item?id=48059761).
+- [awesome-lisp-languages](https://github.com/dundalek/awesome-lisp-languages) and [awesome-lisp-family](https://github.com/damon-kwok/awesome-lisp-family) - Lisp-family catalogs that list Phel.
+- [clojure-dialects-docs](https://github.com/clj-easy/clojure-dialects-docs) - Catalog of Clojure dialects with a dedicated Phel entry.
 
 ## Ideas & Wishlist
 
@@ -212,7 +267,9 @@ Gaps in the ecosystem - good candidates to build. Everything here was checked ag
 - Database migrations runner (migratus, Phinx)
 - Dependency graph and dead-code visualizer
 - Error tracking adapter (Sentry, Bugsnag)
-- Official Docker images with the compiler and PHAR preinstalled
+- GitHub Linguist support so `.phel` files get highlighting and language stats ([PR open](https://github.com/github-linguist/linguist/pull/6282))
+- Homebrew formula and asdf / mise plugin
+- tree-sitter grammar for Phel (Neovim, Helix, Zed)
 - Reusable CI workflow wrapping `phel format`, `phel lint`, and `phel test`
 - MCP server written in Phel, exposing project tools over `phel.ai`
 
@@ -234,6 +291,7 @@ Gaps in the ecosystem - good candidates to build. Everything here was checked ag
 - "Phel by Example" cookbook site with runnable snippets
 - Package catalog listing Phel-specific Packagist releases
 - Advent of Code solutions repository
+- Listing in awesome-php and on Wikipedia's Lisp-family languages page
 
 ## Contributing
 
