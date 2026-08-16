@@ -16,7 +16,6 @@ Phel is a functional, Lisp-inspired language that compiles to PHP: persistent da
   - [Data & Serialization](#data--serialization)
   - [Database](#database)
   - [Logging](#logging)
-  - [Validation](#validation)
 - [Projects & Apps](#projects--apps)
   - [Games](#games)
   - [Web Apps](#web-apps)
@@ -45,6 +44,7 @@ Namespaces shipped with the compiler - check here before reaching for a library 
 | `phel.ai`          | Helpers for talking to LLM providers from Phel                                  |
 | `phel.async`       | Promises, futures, fibers, `pmap`, `await` / `await-all` / `await-any`          |
 | `phel.base64`      | Base64 and URL-safe Base64 encoding                                             |
+| `phel.bench`       | `defbench` benchmarks with stored baselines, comparison, and tolerance gates    |
 | `phel.cli`         | Argument parsing, option coercion, command dispatch                             |
 | `phel.edn`         | Read and write EDN                                                              |
 | `phel.html`        | Hiccup-style HTML generation from vectors and maps                              |
@@ -66,7 +66,7 @@ Namespaces shipped with the compiler - check here before reaching for a library 
 | `phel.walk`        | Generic tree walking (`prewalk`, `postwalk`)                                    |
 | `phel.watch`       | React to file changes from within Phel                                          |
 
-The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `format`, `lint`, `analyze`, `doc`, `doctor`, `config`, `watch`, `profile`, `export`, `init`, `nrepl`, and `lsp`.
+The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `format`, `lint`, `analyze`, `bench`, `doc`, `doctor`, `config`, `watch`, `profile`, `export`, `init`, `nrepl`, and `lsp`.
 
 ## Editor / IDE Plugins
 
@@ -89,10 +89,11 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 
 ## Packages & Libraries
 
+Only libraries that add something the compiler does not ship - check the Batteries Included table above first.
+
 ### CLI
 
 - [phel-cli-gui](https://github.com/Chemaclass/phel-cli-gui) - Functions to render UI in the terminal.
-- [phel-getopt](https://github.com/smeghead/phel-getopt) - Command-line argument parsing for Phel CLI programs.
 
 ### Data & Serialization
 
@@ -106,10 +107,6 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 ### Logging
 
 - [phel-log](https://github.com/phel-lang/phel-log) - Data-driven logging with levels, namespace filtering, pluggable appenders, a PSR-3 adapter, and a Monolog handler bridge. Inspired by Timbre + Monolog.
-
-### Validation
-
-- [phel-schema](https://github.com/phel-lang/phel-schema) - Standalone schema validation library inspired by [zod](https://zod.dev/).
 
 ## Projects & Apps
 
@@ -146,8 +143,7 @@ The CLI ships more than a compiler: `run`, `repl`, `eval`, `test`, `build`, `for
 - [habit-tracker](https://github.com/JesusValeraDev/habit-tracker) - Command-line habit tracker with JSON persistence and streak tracking.
 - [phel-aa](https://github.com/smeghead/phel-aa) - Convert PNG images into ASCII art from the command line.
 - [phel-crawler](https://github.com/SauronBot/phel-crawler) - Web crawler CLI using Guzzle and Symfony DomCrawler.
-- [phel-grep](https://github.com/smeghead/phel-grep) - Grep-like CLI built on phel-getopt.
-- [phel-junkshed](https://github.com/jasalt/phel-junkshed) - Grab-bag of reusable Phel namespaces: CLI options, HTTP client, PDO, sitemap, WordPress and API helpers.
+- [phel-grep](https://github.com/smeghead/phel-grep) - Grep-like CLI written in Phel, with tests and CI.
 - [phel-mml2wav](https://github.com/smeghead/phel-mml2wav) - WAV file generation from MML notation.
 - [phel-saraudon](https://github.com/smeghead/phel-saraudon) - Git log visualization utility.
 - [phel-todo](https://github.com/CosmeValera/phel-todo) - Command-line todo manager exercising records, protocols, multimethods, and transducers.
